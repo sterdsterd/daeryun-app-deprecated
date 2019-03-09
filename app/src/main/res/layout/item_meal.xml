@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2월 20일 수요일"
+        android:id="@+id/date"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="22dp"
+        android:textSize="36sp"
+        android:textColor="#000"
+        android:text="오늘"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:id="@+id/mealCard">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:id="@+id/cardbg"
+            android:background="@drawable/bg_01">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중식"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8dp"
+                    android:text="쇠고기콩나물밥/달래양념장5.6.13.\n호박된장찌개5.6.9.13.\n두부김치조림2.5.6.9.10.13.
+                                       \n아이스슈크림1.2.5.\n마늘쫑어묵볶음1.5.6.13.\n깍두기(고)9.13."
+                    android:textColor="#fff"
+                    android:layout_marginStart="12dp"
+                    android:textSize="16sp"
+                    android:id="@+id/lunch"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dinsection"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="석식"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/dintitle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="잡곡밥\n콩밥\n김치찌개"
+                    android:lineSpacingExtra="8dp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    android:id="@+id/dinner"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
